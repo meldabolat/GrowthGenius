@@ -1,0 +1,66 @@
+.dashboard-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .kpi-card1 {
+    text-align: center;
+    background-color: #f9b7ea;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .kpi-card2 {
+    text-align: center;
+    background-color: #96c9f8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .kpi-card3 {
+    text-align: center;
+    background-color: #f09898;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .kpi-card4 {
+    text-align: center;
+    background-color: #92c987;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .kpi-card h4 {
+    color: #888888;
+  }
+  
+  .kpi-card h3 {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .chart-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .chart-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555555;
+  }
+  

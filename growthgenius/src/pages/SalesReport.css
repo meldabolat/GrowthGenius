@@ -1,0 +1,18 @@
+/* SalesReport.css */
+.sales-report-container {
+    padding: 24px;
+  }
+  
+  .sales-report-container .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .sales-report-container .ant-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sales-report-container .ant-table {
+    margin-top: 20px;
+  }
+  
