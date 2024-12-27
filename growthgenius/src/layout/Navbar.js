@@ -1,7 +1,15 @@
 import React from 'react';
-import { Layout, Input, Avatar } from 'antd';
+import { Layout, Input, Avatar, Badge, Popover, List, Button } from 'antd';
+import { BellOutlined } from '@ant-design/icons';
 
 const { Header } = Layout;
+
+// Örnek bildirim verileri
+const notifications = [
+  { id: 1, message: 'Yeni bir mesaj aldınız.' },
+  { id: 2, message: 'Profiliniz güncellendi.' },
+  { id: 3, message: 'Yeni bir takipçi kazandınız.' },
+];
 
 const Navbar = () => {
   return (
@@ -26,12 +34,33 @@ const Navbar = () => {
           maxWidth: '500px',
         }}
       />
-      
-      {/* Profil Fotoğrafı */}
-      <Avatar
-        size="large"
-        src="https://joeschmoe.io/api/v1/random" // Profil fotoğrafı, bunu değiştirebilirsiniz
-      />
+
+      {/* Profil ve Bildirim Alanı */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+        {/* Bildirim Simgesi */}
+        <Popover
+          placement="bottomRight"
+          title="Bildirimler"
+          content={
+            <List
+              size="small"
+              dataSource={notifications}
+              renderItem={(item) => <List.Item>{item.message}</List.Item>}
+            />
+          }
+          trigger="click"
+        >
+          <Badge count={notifications.length} overflowCount={99}>
+            <BellOutlined style={{ fontSize: '24px', cursor: 'pointer' }} />
+          </Badge>
+        </Popover>
+
+        {/* Profil Fotoğrafı */}
+        <Avatar
+          size="large"
+          src="https://joeschmoe.io/api/v1/random" // Profil fotoğrafı, değiştirebilirsiniz
+        />
+      </div>
     </Header>
   );
 };

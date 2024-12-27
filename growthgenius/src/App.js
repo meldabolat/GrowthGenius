@@ -7,6 +7,7 @@ import Navbar from '../src/layout/Navbar';
 import SalesReport from './pages/SalesReport'; // Sales Report bileşenini dahil et
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import Menu from './pages/Menu'
 
 const { Content } = Layout;
 
@@ -41,6 +42,7 @@ const App = () => {
               <Route path="/sales-report" element={<SalesReport />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/menu" element={<Menu />} />
             </Routes>
           </Content>
         </Layout>
