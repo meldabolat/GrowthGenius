@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.jpg'
+import reportPDF from '../images/final report.pdf'
 import {
   HomeOutlined,
   UserOutlined,
@@ -9,6 +10,7 @@ import {
   SettingOutlined,
   OpenAIOutlined,
   MenuOutlined,
+  PaperClipOutlined,
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -78,7 +80,15 @@ const Sidebar = ({ collapsed, onCollapse }) => {
         <Menu.Item key="5" icon={<SettingOutlined />} style={{ fontSize: '16px' }}>
           <Link to="/settings">Ayarlar</Link>
         </Menu.Item>
+        <Menu.Item key="7" icon={<PaperClipOutlined />} style={{ fontSize: '16px' }}>
+        <a href={reportPDF} download="Report.pdf">
+  Report
+</a>
+        </Menu.Item>
       </Menu>
+      
+      
+  
     </Sider>
   );
 };
