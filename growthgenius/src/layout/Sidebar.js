@@ -3,6 +3,7 @@ import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.jpg'
 import reportPDF from '../images/final report.pdf'
+import todo from '../images/to-do.xlsx'
 import {
   HomeOutlined,
   UserOutlined,
@@ -11,6 +12,7 @@ import {
   OpenAIOutlined,
   MenuOutlined,
   PaperClipOutlined,
+  CheckCircleFilled,
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -82,7 +84,14 @@ const Sidebar = ({ collapsed, onCollapse }) => {
         </Menu.Item>
         <Menu.Item key="7" icon={<PaperClipOutlined />} style={{ fontSize: '16px' }}>
         <a href={reportPDF} download="Report.pdf">
+
   Report
+</a>
+        </Menu.Item>
+        <Menu.Item key="7" icon={<CheckCircleFilled />} style={{ fontSize: '16px' }}>
+        <a href={todo} download="todo">
+          
+ TO-DO
 </a>
         </Menu.Item>
       </Menu>
